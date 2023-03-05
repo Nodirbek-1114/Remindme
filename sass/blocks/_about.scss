@@ -1,0 +1,74 @@
+.about-wrapper {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    @include flex(row, center, space-between);
+    gap: 147px;
+
+    .about__left {
+        background-color: #EEF4FF;
+        border-radius: 0px 100px 100px 0px;
+
+        &--img {
+            max-width: 600px;
+            padding-right: 47px;
+        }
+    }
+
+    .about__right {
+        @include flex(column, flex-start, center);
+        gap: 50px;
+
+        &--title {
+            @include text(600, x36px, 65px, #212121);
+        }
+
+        &--box {
+            @include flex(row, center, flex flex-start);
+            gap: 30px;
+
+            &-card {
+                @include flex(column, flex-start, center);
+                gap: 20px
+            }
+
+            &-n {
+                @include text(600, 18px, 27px, #212121);
+            }
+
+            &-j {
+                @include text(400, 14px, 21px, #747474);
+            }
+        }
+
+        &--text {
+            @include text(400, 18px, 36px, #212121);
+        }
+
+        &--arrow {
+            @include flex(row, center, flex-start);
+            gap: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .about-wrapper {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        @include flex(column, center, space-between);
+
+        .about__left {
+            display: none;
+        }
+
+        .about__right {
+            @include flex(column, center, center);
+            gap: 50px;
+
+            &--text {
+                max-width: 493px;
+                @include text(400, 18px, 36px, #212121);
+            }
+        }
+    }
+}

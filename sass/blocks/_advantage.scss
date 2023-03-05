@@ -1,0 +1,185 @@
+.advantage-wrapper {
+    margin-top: 150px;
+
+    .advantage__top {
+        @include flex(row, center, space-between);
+        gap: 50px;
+
+        .advantage__top--img {
+            background: #EEF4FF;
+            border-radius: 0px 100px 100px 0px;
+        }
+
+        .advantage__top--right {
+            &-title {
+                max-width: 493px;
+                margin-bottom: 50px;
+                @include text(600, 35px, 65px, #212121);
+            }
+
+            &-text {
+                max-width: 493px;
+                @include text(400, 18px, 36px, #747474);
+            }
+        }
+    }
+    .advantage__top.two{
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .advantage-wrapper {
+        margin-top: 150px;
+
+        .advantage__top {
+            @include flex(column, center, space-between);
+            gap: 50px;
+
+            .advantage__top--img {
+                width: 100%;
+                background: #EEF4FF;
+                border-radius: 0px 100px 100px 0px;
+            }
+
+            .advantage__top--right {
+                &-title {
+                    max-width: 493px;
+                    margin-bottom: 50px;
+                    @include text(600, 35px, 65px, #212121);
+                }
+
+                &-text {
+                    max-width: 493px;
+                    @include text(400, 18px, 36px, #747474);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .advantage-wrapper {
+        margin-top: 150px;
+
+        .advantage__top {
+            @include flex(column, center, space-between);
+            gap: 50px;
+
+            .advantage__top--img {
+                width: 100%;
+                background: #EEF4FF;
+                border-radius: 0px 100px 100px 0px;
+            }
+
+            .advantage__top--right {
+                &-title {
+                    text-align: center;
+                    max-width: 493px;
+                    margin-bottom: 50px;
+                    @include text(600, 35px, 65px, #212121);
+                }
+
+                &-text {
+                    text-align: center;
+                    max-width: 493px;
+                    @include text(400, 18px, 36px, #747474);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .advantage-wrapper {
+        margin-top: 150px;
+
+        .advantage__top {
+            @include flex(column, center, space-between);
+            gap: 50px;
+
+            .advantage__top--img {
+                width: 100%;
+                background: #EEF4FF;
+                border-radius: 0px 100px 100px 0px;
+            }
+
+            .advantage__top--right {
+                &-title {
+                    text-align: center;
+                    max-width: 493px;
+                    margin-bottom: 50px;
+                    @include text(600, 35px, 65px, #212121);
+                }
+
+                &-text {
+                    text-align: center;
+                    max-width: 493px;
+                    @include text(400, 18px, 36px, #747474);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .advantage-wrapper {
+        margin-top: 150px;
+
+        .advantage__top {
+            @include flex(column, center, space-between);
+            gap: 50px;
+
+            .advantage__top--img {
+                width: 100%;
+                background: #EEF4FF;
+                border-radius: 0px 100px 100px 0px;
+            }
+
+            .advantage__top--right {
+                &-title {
+                    text-align: center;
+                    max-width: 493px;
+                    margin-bottom: 50px;
+                    @include text(600, 35px, 65px, #212121);
+                }
+
+                &-text {
+                    text-align: center;
+                    max-width: 493px;
+                    @include text(400, 18px, 36px, #747474);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .advantage-wrapper {
+        margin-top: 150px;
+
+        .advantage__top {
+            @include flex(column, center, space-between);
+            gap: 50px;
+
+            .advantage__top--img {
+                width: 100%;
+                background: #EEF4FF;
+                border-radius: 0px 100px 100px 0px;
+            }
+
+            .advantage__top--right {
+                &-title {
+                    max-width: 493px;
+                    margin-bottom: 50px;
+                    @include text(600, 35px, 65px, #212121);
+                }
+
+                &-text {
+                    max-width: 493px;
+                    @include text(400, 18px, 36px, #747474);
+                }
+            }
+        }
+    }
+}
