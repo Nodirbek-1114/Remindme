@@ -1,0 +1,395 @@
+.header-wrapper {
+    @include flex(row, center, space-between);
+    margin-top: 25px;
+
+    .header__logo {
+        @include flex(row, center, flex-start);
+        gap: 10px;
+
+        &--title {
+            @include text(700, 18px, 25px, #212121);
+        }
+
+        &--title:hover {
+            color: #2D76F9;
+        }
+
+        &--span {
+            @include text(700, 18px, 25px, #2D76F9);
+        }
+
+        &--span:hover {
+            color: #212121;
+        }
+    }
+
+    .header__nav {
+        &--ul {
+            @include flex(row, center, space-between);
+            gap: 50px;
+
+            &-item {}
+
+            &-link {
+                @include text(400, 18px, 27px, #212121);
+            }
+
+            &-link:hover {
+                color: #2D76F9;
+            }
+
+            &-active {
+                @include text(700, 18px, 27px, #2D76F9);
+            }
+        }
+    }
+
+    .header__about {
+        @include text(400, 18px, 27px, #2D76F9);
+        padding: 11px 40px;
+        border: 1.5px solid #2D76F9;
+        border-radius: 50px;
+    }
+
+    .header__about:hover {
+        background-color: #2D76F9;
+        opacity: 0.6;
+        color: #fff;
+    }
+
+    .header__menu {
+        display: none;
+
+        &--list {
+            color: #2D76F9;
+            border: 1.5px solid #2D76F9;
+            border-radius: 5px;
+            padding: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header-wrapper {
+        @include flex(row, center, space-between);
+        margin-top: 25px;
+
+        .header__logo {
+            @include flex(row, center, flex-start);
+            gap: 10px;
+
+            &--title {
+                @include text(700, 18px, 25px, #212121);
+            }
+
+            &--title:hover {
+                color: #2D76F9;
+            }
+
+            &--span {
+                @include text(700, 18px, 25px, #2D76F9);
+            }
+
+            &--span:hover {
+                color: #212121;
+            }
+        }
+
+        .header__nav {
+            &--ul {
+                @include flex(row, center, space-between);
+                gap: 50px;
+
+                &-item {}
+
+                &-link {
+                    @include text(400, 18px, 27px, #212121);
+                }
+
+                &-link:hover {
+                    color: #2D76F9;
+                }
+
+                &-active {
+                    @include text(700, 18px, 27px, #2D76F9);
+                }
+            }
+        }
+
+        .header__about {
+            @include text(400, 18px, 27px, #2D76F9);
+            padding: 11px 40px;
+            border: 1.5px solid #2D76F9;
+            border-radius: 50px;
+        }
+
+        .header__about:hover {
+            background-color: #2D76F9;
+            opacity: 0.6;
+            color: #fff;
+        }
+
+        .header__menu {
+            display: none;
+
+            &--list {
+                color: #2D76F9;
+                border: 1.5px solid #2D76F9;
+                border-radius: 5px;
+                padding: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-wrapper {
+        @include flex(row, center, space-between);
+        margin-top: 25px;
+
+        .header__logo {
+            @include flex(row, center, flex-start);
+            gap: 10px;
+
+            &--title {
+                @include text(700, 18px, 25px, #212121);
+            }
+
+            &--title:hover {
+                color: #2D76F9;
+            }
+
+            &--span {
+                @include text(700, 18px, 25px, #2D76F9);
+            }
+
+            &--span:hover {
+                color: #212121;
+            }
+        }
+
+        .header__nav {
+            &--ul {
+                @include flex(row, center, space-between);
+                gap: 20px;
+
+                &-item {}
+
+                &-link {
+                    @include text(400, 18px, 27px, #212121);
+                }
+
+                &-link:hover {
+                    color: #2D76F9;
+                }
+
+                &-active {
+                    @include text(700, 18px, 27px, #2D76F9);
+                }
+            }
+        }
+
+        .header__about {
+            @include text(400, 18px, 27px, #2D76F9);
+            padding: 11px 40px;
+            border: 1.5px solid #2D76F9;
+            border-radius: 50px;
+        }
+
+        .header__about:hover {
+            background-color: #2D76F9;
+            opacity: 0.6;
+            color: #fff;
+        }
+
+        .header__menu {
+            display: none;
+
+            &--list {
+                color: #2D76F9;
+                border: 1.5px solid #2D76F9;
+                border-radius: 5px;
+                padding: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header-wrapper {
+        @include flex(row, center, space-between);
+        margin-top: 25px;
+
+        .header__logo {
+            @include flex(row, center, flex-start);
+            gap: 10px;
+
+            &--title {
+                @include text(700, 18px, 25px, #212121);
+            }
+
+            &--title:hover {
+                color: #2D76F9;
+            }
+
+            &--span {
+                @include text(700, 18px, 25px, #2D76F9);
+            }
+
+            &--span:hover {
+                color: #212121;
+            }
+        }
+
+        .header__nav {
+            display: none;
+
+            &--ul {
+                @include flex(row, center, space-between);
+                gap: 20px;
+
+                &-item {}
+
+                &-link {
+                    @include text(400, 18px, 27px, #212121);
+                }
+
+                &-link:hover {
+                    color: #2D76F9;
+                }
+
+                &-active {
+                    @include text(700, 18px, 27px, #2D76F9);
+                }
+            }
+        }
+
+        .header__about {
+            @include text(400, 18px, 27px, #2D76F9);
+            padding: 8px 30px;
+            border: 1.5px solid #2D76F9;
+            border-radius: 50px;
+        }
+
+        .header__about:hover {
+            background-color: #2D76F9;
+            opacity: 0.6;
+            color: #fff;
+        }
+
+        .header__menu {
+            display: none;
+
+            &--list {
+                color: #2D76F9;
+                border: 1.5px solid #2D76F9;
+                border-radius: 5px;
+                padding: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .header-wrapper {
+        @include flex(row, center, space-between);
+        margin-top: 25px;
+
+        .header__logo {
+            @include flex(row, center, flex-start);
+            gap: 10px;
+
+            &--title {
+                @include text(700, 18px, 25px, #212121);
+            }
+
+            &--title:hover {
+                color: #2D76F9;
+            }
+
+            &--span {
+                @include text(700, 18px, 25px, #2D76F9);
+            }
+
+            &--span:hover {
+                color: #212121;
+            }
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header__about {
+            display: none;
+        }
+
+        .header__menu {
+            display: block;
+
+            &--list {
+                color: #2D76F9;
+                border: 1.5px solid #2D76F9;
+                border-radius: 5px;
+                padding: 12px;
+            }
+
+            &--list:hover {
+                background-color: #2D76F9;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header-wrapper {
+        @include flex(row, center, space-between);
+        margin-top: 25px;
+
+        .header__logo {
+            @include flex(row, center, flex-start);
+            gap: 10px;
+
+            &--title {
+                @include text(700, 18px, 25px, #212121);
+            }
+
+            &--title:hover {
+                color: #2D76F9;
+            }
+
+            &--span {
+                @include text(700, 18px, 25px, #2D76F9);
+            }
+
+            &--span:hover {
+                color: #212121;
+            }
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header__about {
+            display: none;
+        }
+
+        .header__menu {
+            display: block;
+
+            &--list {
+                color: #2D76F9;
+                border: 1.5px solid #2D76F9;
+                border-radius: 5px;
+                padding: 12px;
+            }
+
+            &--list:hover {
+                background-color: #2D76F9;
+                opacity: 0.6;
+            }
+        }
+    }
+}
