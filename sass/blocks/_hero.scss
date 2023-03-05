@@ -1,0 +1,533 @@
+.hero-wrapper {
+    margin-top: 75px;
+    @include flex(row, center, space-between);
+
+    .hero__left {
+        &--title {
+            max-width: 533px;
+            @include text(600, 64px, 85px, #212121);
+        }
+
+        &--text {
+            max-width: 533px;
+            @include text(400, 18px, 36px, #747474);
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        &--btn {
+            @include btn(#2D76F9, 1500px, none, 24px 58px);
+            color: #fff;
+        }
+
+        &--btn:hover {
+            @include btn(#fff, 1500px, 1px solid #2D76F9, 24px 58px);
+            color: #2D76F9;
+        }
+    }
+
+    .hero__right {
+        max-width: 700px;
+        position: relative;
+        left: -100px;
+        top: 0;
+        background-image: url("../../images/hero-back.png");
+        border-radius: 0px 0px 0px 100px;
+
+        &--img {}
+
+        &--easy {
+            position: absolute;
+            top: 51px;
+            left: -66px;
+            @include btn(#fff, 25px, none, 13px 14px);
+            box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+            &-eb {
+                @include text(600, 24px, 36px, #fff);
+                @include btn(#2D76F9, 15px, none, 8px 24px);
+            }
+
+            &-eb:hover {
+                @include btn(#fff, 15px, none, 8px 24px);
+                color: #2D76F9;
+            }
+
+            &-use {
+                @include text(500, 24px, 36px, #2D76F9);
+                margin-left: 3px;
+            }
+
+            &-use:hover {
+                @include text(600, 24px, 36px, #fff);
+                @include btn(#2D76F9, 15px, none, 8px 24px);
+            }
+        }
+
+        &--an {
+            position: absolute;
+            top: 222px;
+            right: -141px;
+            @include btn(#fff, 25px, none, 13px 14px);
+            box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+            &-int {
+                @include text(500, 24px, 36px, #2D76F9);
+                margin-right: 12px;
+            }
+
+            &-ui {
+                @include text(600, 24px, 36px, #fff);
+                @include btn(#2D76F9, 15px, none, 7px 18px);
+            }
+        }
+
+        &--download {
+            position: absolute;
+            top: 413px;
+            left: -123px;
+            padding: 20px 22px 11px 23px;
+            background: #FFFFFF;
+            box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+            border-radius: 25px;
+
+            &-user {
+                @include text(400, 14px, 21px, #747474);
+                display: block;
+            }
+
+            &-num {
+                @include text(600, 48px, 72px, #2D76F9);
+                letter-spacing: 0.05em;
+                display: block;
+            }
+        }
+    }
+}
+
+// media
+@media only screen and (max-width: 992px) {
+    .hero-wrapper {
+        margin-top: 75px;
+        @include flex(column, center, space-between);
+
+        .hero__left {
+            @include flex(row, flex-end, space-between);
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+
+            &--title {
+                max-width: 450px;
+                @include text(600, 48px, 78px, #212121);
+            }
+
+            &--text {
+                max-width: 500px;
+                @include text(400, 18px, 36px, #747474);
+                margin: 0;
+            }
+
+            &--btn {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            &--btn:hover {
+                @include btn(#fff, 1500px, 1px solid #2D76F9, 24px 58px);
+                color: #2D76F9;
+            }
+        }
+
+        .hero__right {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+
+            &--img {}
+
+            &--easy {
+                position: absolute;
+                top: 51px;
+                left: -66px;
+                @include btn(#fff, 25px, none, 13px 14px);
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+                &-eb {
+                    @include text(600, 24px, 36px, #fff);
+                    @include btn(#2D76F9, 15px, none, 8px 24px);
+                }
+
+                &-eb:hover {
+                    @include btn(#fff, 15px, none, 8px 24px);
+                    color: #2D76F9;
+                }
+
+                &-use {
+                    @include text(500, 24px, 36px, #2D76F9);
+                    margin-left: 3px;
+                }
+
+                &-use:hover {
+                    @include text(600, 24px, 36px, #fff);
+                    @include btn(#2D76F9, 15px, none, 8px 24px);
+                }
+            }
+
+            &--an {
+                position: absolute;
+                top: 222px;
+                right: -141px;
+                @include btn(#fff, 25px, none, 13px 14px);
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+                &-int {
+                    @include text(500, 24px, 36px, #2D76F9);
+                    margin-right: 12px;
+                }
+
+                &-ui {
+                    @include text(600, 24px, 36px, #fff);
+                    @include btn(#2D76F9, 15px, none, 7px 18px);
+                }
+            }
+
+            &--download {
+                position: absolute;
+                top: 413px;
+                left: -123px;
+                padding: 20px 22px 11px 23px;
+                background: #FFFFFF;
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+                border-radius: 25px;
+
+                &-user {
+                    @include text(400, 14px, 21px, #747474);
+                    display: block;
+                }
+
+                &-num {
+                    @include text(600, 48px, 72px, #2D76F9);
+                    letter-spacing: 0.05em;
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-wrapper {
+        margin-top: 75px;
+        @include flex(column, center, space-between);
+
+        .hero__left {
+            @include flex(column, center, space-between);
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+
+            &--title {
+                max-width: 450px;
+                @include text(600, 48px, 78px, #212121);
+            }
+
+            &--text {
+                max-width: 500px;
+                @include text(400, 18px, 36px, #747474);
+                margin-bottom: 24px;
+            }
+
+            &--btn {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            &--btn:hover {
+                @include btn(#fff, 1500px, 1px solid #2D76F9, 24px 58px);
+                color: #2D76F9;
+            }
+        }
+
+        .hero__right {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+
+            &--img {}
+
+            &--easy {
+                position: absolute;
+                top: 70px;
+                left: -66px;
+                @include btn(#fff, 25px, none, 13px 14px);
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+                &-eb {
+                    @include text(600, 24px, 36px, #fff);
+                    @include btn(#2D76F9, 15px, none, 8px 24px);
+                }
+
+                &-eb:hover {
+                    @include btn(#fff, 15px, none, 8px 24px);
+                    color: #2D76F9;
+                }
+
+                &-use {
+                    @include text(500, 24px, 36px, #2D76F9);
+                    margin-left: 3px;
+                }
+
+                &-use:hover {
+                    @include text(600, 24px, 36px, #fff);
+                    @include btn(#2D76F9, 15px, none, 8px 24px);
+                }
+            }
+
+            &--an {
+                position: absolute;
+                top: 222px;
+                right: -141px;
+                @include btn(#fff, 25px, none, 13px 14px);
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+                &-int {
+                    @include text(500, 24px, 36px, #2D76F9);
+                    margin-right: 12px;
+                }
+
+                &-ui {
+                    @include text(600, 24px, 36px, #fff);
+                    @include btn(#2D76F9, 15px, none, 7px 18px);
+                }
+            }
+
+            &--download {
+                position: absolute;
+                top: 413px;
+                left: -123px;
+                padding: 20px 22px 11px 23px;
+                background: #FFFFFF;
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+                border-radius: 25px;
+
+                &-user {
+                    @include text(400, 14px, 21px, #747474);
+                    display: block;
+                }
+
+                &-num {
+                    @include text(600, 48px, 72px, #2D76F9);
+                    letter-spacing: 0.05em;
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+    .hero-wrapper {
+        margin-top: 60px;
+        @include flex(column, center, space-between);
+
+        .hero__left {
+            @include flex(column, center, space-between);
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+
+            &--title {
+                max-width: 360px;
+                @include text(500, 36px, 60px, #212121);
+            }
+
+            &--text {
+                max-width: 400px;
+                @include text(400, 16px, 32px, #747474);
+                margin-bottom: 20px;
+            }
+
+            &--btn {
+                @include btn(#2D76F9, 1500px, none, 28px 48px);
+                margin: 0 auto;
+            }
+
+            &--btn:hover {
+                @include btn(#fff, 1500px, 1px solid #2D76F9, 18px 48px);
+                color: #2D76F9;
+            }
+        }
+
+        .hero__right {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+
+            &--img {}
+
+            &--easy {
+                position: absolute;
+                top: 70px;
+                left: -66px;
+                @include btn(#fff, 25px, none, 10px 12px);
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+                &-eb {
+                    @include text(500, 18px, 32px, #fff);
+                    @include btn(#2D76F9, 15px, none, 8px 24px);
+                }
+
+                &-eb:hover {
+                    @include btn(#fff, 15px, none, 6px 18px);
+                    color: #2D76F9;
+                }
+
+                &-use {
+                    @include text(400, 18px, 32px, #2D76F9);
+                    margin-left: 3px;
+                }
+
+                &-use:hover {
+                    @include text(500, 18px, 32px, #fff);
+                    @include btn(#2D76F9, 15px, none, 6px 18px);
+                }
+            }
+
+            &--an {
+                position: absolute;
+                top: 210px;
+                right: -120px;
+                @include btn(#fff, 25px, none, 10px 12px);
+                box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.1);
+
+                &-int {
+                    @include text(400, 18px, 32px, #2D76F9);
+                    margin-right: 12px;
+                }
+
+                &-ui {
+                    @include text(500, 18px, 32px, #fff);
+                    @include btn(#2D76F9, 15px, none, 6px 15px);
+                }
+            }
+
+            &--download {
+                position: absolute;
+                top: 410px;
+                left: -85px;
+                max-width: 160px;
+                padding: 6px 8px 2px 5px;
+
+                &-user {
+                    // @include text(300, 8px, 9px, #747474);
+                    // display: block;
+                }
+
+                &-num {
+                    @include text(400, 24px, 48px, #2D76F9);
+                    letter-spacing: 0.05em;
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .hero-wrapper {
+        margin-top: 60px;
+        @include flex(column, center, space-between);
+
+        .hero__left {
+            @include flex(column, center, space-between);
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+
+            &--title {
+                max-width: 360px;
+                @include text(500, 36px, 60px, #212121);
+            }
+
+            &--text {
+                max-width: 400px;
+                @include text(400, 16px, 32px, #747474);
+                margin-bottom: 20px;
+            }
+
+            &--btn {
+                @include btn(#2D76F9, 1500px, none, 28px 48px);
+                margin: 0 auto;
+            }
+
+            &--btn:hover {
+                @include btn(#fff, 1500px, 1px solid #2D76F9, 18px 48px);
+                color: #2D76F9;
+            }
+        }
+
+        .hero__right {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+
+            &--img {}
+
+            &--easy {
+                position: absolute;
+                top: 45px;
+                left: -45px;
+
+                &-eb {
+                    @include text(500, 18px, 32px, #fff);
+                    @include btn(#2D76F9, 15px, none, 8px 24px);
+                }
+
+                &-use {
+                    @include text(400, 18px, 32px, #2D76F9);
+                    margin-left: 3px;
+                }
+            }
+
+            &--an {
+                position: absolute;
+                top: 210px;
+                right: -40px;
+                @include btn(#fff, 16px, none, 6px 8px);
+
+                &-int {
+                    margin-right: 6px;
+                }
+            }
+
+            &--download {
+                position: absolute;
+                top: 410px;
+                left: -20px;
+                padding: 6px 8px 8px 2px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .hero-wrapper {
+        margin-top: 45px;
+
+        .hero__left {
+            @include flex(column, center, center);
+
+            &--btn {
+                @include btn(#2D76F9, 1500px, none, 28px 48px);
+                margin-bottom: 30px;
+            }
+        }
+
+        .hero__right {
+            display: none;
+        }
+    }
+
+}
